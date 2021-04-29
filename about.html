@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - A&A</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?
+    family=Poppins:wght@200;300;400;500;600;700&display=swap" 
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+        <div class= "container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="Images/logo-products.png" width="125px">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <img src="Images/cart.png" width="30px" height="30px">
+                <img src="Images/menu.png" class="menu-icon" 
+                onclick="menutoggle()">
+            </div>          
+        </div>
+
+        <!----about---->
+
+        <div class="whole">
+            <div class="about-section">
+              <h1>About Our Website</h1>
+                <h5>E-Commerce website using HTML,CSS and Javascript</h5>
+              
+            </div>
+            
+            <h2 style="text-align:center">Our Team</h2>
+            <div class="row">
+              <div class="column">
+                <div class="card">
+                  <img src="Images/Amelin.jpeg" alt="Amelin" style="width:82%">
+                  <div class="container">
+                    <h2>Amelin Fernandes</h2>
+                    <p class="usn">ENG19CS0028</p>
+                    <p>amelinfernandes2001@gmail.com</p>
+                    <p><button class="button">Contact</button></p>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="column">
+                <div class="card">
+                  <img src="Images/Amoolya.jpeg" alt="Amoolya" style="width:100%">
+                  <div class="container">
+                    <h2>Amoolya S</h2>
+                    <p class="usn">ENG19CS0030</p>
+                    <p>amoolya.s0811@gmail.com</p>
+                    <p><button class="button">Contact</button></p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="column">
+                <div class="card">
+                  <img src="Images/Aniqaa.jpeg" alt="Aniqaa" style="width:65%">
+                  <div class="container">
+                    <h2>Aniqaa Patil</h2>
+                    <p class="usn">ENG19CS0033</p>
+                    <p>patilaniqaa@gmail.com</p>
+                    <p><button class="button">Contact</button></p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="column">
+                <div class="card">
+                  <img src="Images/Anushree.jpeg" alt="Anushree" style="width:57%">
+                  <div class="container">
+                    <h2>Anushree Shetty</h2>
+                    <p class="usn">ENG19CS0040</p>
+                    <p>shettyanushree2002@gmail.com</p>
+                    <p><button class="button">Contact</button></p>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            </div>
+
+<!---footer--->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App For Android and ios Mobile Phones</p>
+                    <div class="app-logo">
+                        <img src="Images/play-store.png">
+                        <img src="Images/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="Images/logo-white.png">
+                    <p>Our Purpose Is To Sustainably Make the Pleasure and 
+                        Benifits of Sports Accessible to many. </p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Joint Affliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2021 - Amelin and Amoolya</p></hr>
+        </div>
+    </div>
+<!---js for toggle menu--->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else
+            {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+</html>
